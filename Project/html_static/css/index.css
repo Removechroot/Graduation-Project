@@ -1,0 +1,34 @@
+/*************通用样式*********/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #000;
+
+}
+a:hover{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+
+/*************通用样式*********/
+.lk_logo img{
+    height: 30px;
+}
+.top_img{
+    width: 50px;
+    padding-right: 100px;
+}
+.top_img img{
+    width: 25px;
+    height: 25px;
+}
+.spac{
+    width: 600px;
+    height: 30px;
+}
