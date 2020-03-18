@@ -57,7 +57,7 @@ ul, ol {
 
 .block1{
     width: 800px;
-    height: 900px;
+    height: 1500px;
     float: left;
     background-color: red;
 }
@@ -79,10 +79,29 @@ ul, ol {
     font-size: 22px;
     font-weight: 800;
 }
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+
+.describe{
+    width: 120px;
+    height: 150px;
+    float: left;
+    margin-left: 15px;
+    font-size: 10px;
+
 }
+.tellme{
+    width: 120px;
+    height: 150px;
+    border-style: dashed;
+    float: right;
+    margin-right: 85px;
+    font-size: 15px;
+}
+.cardcss:hover{
+    border: grey inset 1px;
+}
+
+
+
 
 .logo {
     width: 300px;
