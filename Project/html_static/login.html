@@ -1,168 +1,56 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Login</title>
-<!-- Bootstrap 核心CSS -->
-        <link rel="stylesheet" href="font/iconfont.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-
-<!--<style>-->
-<!--html, body {-->
-<!--    height: 100%;-->
-<!--}-->
-
-<!--body {-->
-<!--    display: -ms-flexbox;-->
-<!--    display: -webkit-box;-->
-<!--    display: flex;-->
-<!--    -ms-flex-align: center;-->
-<!--    -ms-flex-pack: center;-->
-<!--    -webkit-box-align: center;-->
-<!--    align-items: center;-->
-<!--    -webkit-box-pack: center;-->
-<!--    justify-content: center;-->
-<!--    padding-top: 40px;-->
-<!--    padding-bottom: 40px;-->
-<!--    background-color: #f5f5f5;-->
-<!--}-->
-<!--</style>-->
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>鲜配-登录</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+<body>
+	<div class="login_top clearfix">
+		<a href="index.html" class="login_logo"><img src="images/logo02.png"></a>	
+	</div>
 
+	<div class="login_form_bg">
+		<div class="login_form_wrap clearfix">
+			<div class="login_banner fl"></div>
+			<div class="slogan fl">日夜兼程 · 急速送达</div>
+			<div class="login_form fr">
+				<div class="login_title clearfix">
+					<h1>用户登录</h1>
+					<a href="#">立即注册</a>
+				</div>
+				<div class="form_input">
+					<form>
+						<input type="text" name="username" class="name_input" placeholder="请输入用户名">
+						<div class="user_error">输入错误</div>
+						<input type="password" name="pwd" class="pass_input" placeholder="请输入密码">
+						<div class="pwd_error">输入错误</div>
+						<div class="more_input clearfix">
+							<input type="checkbox" name="">
+							<label>记住用户名</label>
+							<a href="#">忘记密码</a>
+						</div>
+						<input type="submit" name="" value="登录" class="input_submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-
-<body class="text-center">
-
-<!---------------------Top_Begin-------------------->
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <div class="container">
-        <a class="lk_logo navbar-brand d-flex justify-content-center align-items-center" href="#">
-            <img src="images/Love.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<div class="spac"></div>
-            <ul class="navbar-nav mr-auto text-center">
-
-               <li class="nav-item active ">
-                  <a class=" nav-link top_img " href="#">
-                   <i class="iconfont icon-xin d-block" style="font-size: 25px;"></i>
-                      <span>订阅</span>
-                  </a>
-                  </li>
-
-                <li class="nav-item active ">
-                      <a class="nav-link top_img" href="#">
-                      <i class="iconfont icon-ren d-block" style="font-size: 25px;"></i>
-                          <span>账户</span>
-                      </a>
-                  </li>
-
-
-            </ul>
-
-            <button type="button" class="btn btn-dark btn-sm" style="margin-right: 5px">注册</button>
-
-
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
-            </form>
-        </div>
-    </div>
-</nav>
-<!---------------------Top_End-------------------->
-
-
-<div id="Login_main">
-<form class="form-signin">
-      <h1 class="h3 mb-3 font-weight-normal">登录中心</h1>
-      <label for="inputUser" class="sr-only">账号</label>
-      <input type="User" id="inputUser" class="form-control" placeholder="账号" required autofocus>
-      <label for="inputPassword" class="sr-only">密码</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
-    </form>
-</div>
-
-<!---------------------Bottom_Begin-------------------->
-<div class="container-fluid">
-<div class="row"  style="height: 230px; background-color:#23272b;">
-    <div class="col-lg-6 ml-5">
-        <div class="logo mt-5 ml-5"></div>
-        <p class="text-secondary ml-5 mt-3">由高教社联手网易推出，让每一个有提升愿望的用户能够学到中国知名高校的课程，并获得认证。</p>
-    </div>
-    <div class="col   d-none d-lg-block d-xl-block">
-        <div>
-            <p class="text-left text-secondary mt-5">关于我们</p>
-        </div>
-        <div class="footer_text" style="width: 110px;">
-             <a href="#" class="float-left text-secondary">薛晓云</a>
-
-             <a href="#" class="float-right text-secondary">薛晓云</a>
-
-        </div>
-        <div class="footer_text" style="width: 110px;">
-             <a href="#" class="float-left text-secondary">薛晓云</a>
-             <a href="#" class="float-right text-secondary">薛晓云</a>
-
-        </div>
-      <div class="footer_text" style="width: 110px;">
-             <a href="#" class="float-left text-secondary">薛晓云</a>
-             <a href="#" class="float-right text-secondary">薛晓云</a>
-
-        </div>
-    </div>
-    <div class="col text-secondary mt-5 ml-n5 d-none d-lg-block d-xl-block footer-logo">
-            <p class="ml-5 ">关注我们</p>
-            <div id="weichat_logo">
-        <span class="iconfont icon-weixin" style="margin-left: 18px;font-size: 55px;"><a href="javascript:;"></a>
-        <img src="images/1584096441.png" class=" mb-n2" alt="">
-        </span>
-
-                <span class="iconfont icon-weibo" style="font-size: 50px;"><a href="javascript:;"></a></span>
-            </div>
-
-        </div>
-    <div class="col d-none d-xl-block">
-        <p class="text-secondary mt-5 ">友情链接</p>
-        <dd><a href="javascript:;" class="link">123423423423</a></dd>
-        <dd><a href="javascript:;" class="link">123423423423</a></dd>
-        <dd><a href="javascript:;" class="link">123423423423</a></dd>
-        <dd><a href="javascript:;" class="link">123423423423</a></dd>
-
-
-    </div>
-
-
-</div>
-    </div>
-        <div class="container-fluid text-secondary text-center footer-2 d-none d-lg-block d-xl-block" style="background-color:#23272b;">
-        <p>粤B2-20090191-26 | 京ICP备12020869号-2 | 京公网安备44010602000207</p>
-        <p>©2014-2020 icourse163.org</p>
-    </div>
-<!---------------------Bottom_End-------------------->
-
-
-
-
-
-<!-- Bootstrap 核心 JavaScript -->
-<script src="js/jquery.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+	<div class="footer no-mp">
+		<div class="foot_link">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">招聘人才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>		
+		</div>
+		<p>© 2020 顺德职业技术学院</p>
+		<p>电话：020-*******    越ICP备*******110号</p>
+	</div>
+	
 </body>
 </html>

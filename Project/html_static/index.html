@@ -1,635 +1,354 @@
-<!doctype html>
-<html lang="zh-cn">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>鲜配-首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="font/iconfont.css">
-    
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/slide.js"></script>
 
-
-    <title></title>
 </head>
-<body style="background-color:#F2F2F2;">
-<!---------------------Top_Begin-------------------->
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <div class="container">
-        <a class="lk_logo navbar-brand d-flex justify-content-center align-items-center" href="index.html">
-            <img src="images/Love.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到鲜配!</div>
+			<div class="fr">
+				<div class="login_info fl">
+					欢迎您：<em>张 山</em>
+				</div>
+				<div class="login_btn fl">
+					<a href="login.html">登录</a>
+					<span>|</span>
+					<a href="register.html">注册</a>
+				</div>
+				<div class="user_link fl">
+					<span>|</span>
+					<a href="user_center_info.html">用户中心</a>
+					<span>|</span>
+					<a href="cart.html">我的购物车</a>
+					<span>|</span>
+					<a href="user_center_order.html">我的订单</a>
+				</div>
+			</div>
+		</div>		
+	</div>
 
+	<div class="search_bar clearfix">
+		<a href="index.html" class="logo fl"><img src="images/logo.png"></a>
+		<div class="search_con fl">
+			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
+			<input type="button" class="input_btn fr" name="" value="搜索">
+		</div>
+		<div class="guest_cart fr">
+			<a href="#" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl" id="show_count">0</div>
+		</div>
+	</div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="spac"></div>
-            <ul class="navbar-nav mr-auto text-center">
+	<div class="navbar_con">
+		<div class="navbar">
+			<h1 class="fl">全部商品分类</h1>
+			<ul class="navlist fl">
+				<li><a href="">首页</a></li>
+				<li class="interval">|</li>
+				<li><a href="">手机生鲜</a></li>
+				<li class="interval">|</li>
+				<li><a href="">抽奖</a></li>
+			</ul>
+		</div>
+	</div>
 
-                <li class="nav-item active ">
-                    <a class=" nav-link top_img " href="#">
-                        <i class="iconfont icon-xin d-block" style="font-size: 25px;"></i>
-                        <span class="d-none d-lg-block">订阅</span>
-                        <span class="d-lg-none" style="text-decoration: underline;">订阅</span>
-                    </a>
-                </li>
+	<div class="center_con clearfix">
+		<ul class="subnav fl">
+			<li><a href="#model01" class="fruit">新鲜水果</a></li>
+			<li><a href="#model02" class="seafood">海鲜水产</a></li>
+			<li><a href="#model03" class="meet">猪牛羊肉</a></li>
+			<li><a href="#model04" class="egg">禽类蛋品</a></li>
+			<li><a href="#model05" class="vegetables">新鲜蔬菜</a></li>
+			<li><a href="#model06" class="ice">速冻食品</a></li>
+		</ul>
+		<div class="slide fl">
+			<ul class="slide_pics">
+				<li><img src="images/slide.jpg" alt="幻灯片"></li>
+				<li><img src="images/slide02.jpg" alt="幻灯片"></li>
+				<li><img src="images/slide03.jpg" alt="幻灯片"></li>
+				<li><img src="images/slide04.jpg" alt="幻灯片"></li>
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul class="points"></ul>
+		</div>
+		<div class="adv fl">
+			<a href="#"><img src="images/adv01.jpg"></a>
+			<a href="#"><img src="images/adv02.jpg"></a>
+		</div>
+	</div>
 
-                <li class="nav-item active ">
-                    <a class="nav-link top_img" href="#">
-                        <i class="iconfont icon-ren d-block" style="font-size: 25px;"></i>
-                        <span class="d-none d-lg-block">账户</span>
-                        <span class="d-lg-none" style="text-decoration: underline;">账户</span>
-                    </a>
-                </li>
-
-
-            </ul>
-
-           <button type="button" class="btn btn-dark btn-sm" style="margin-right: 5px;"><a href="login.html" style="color: white">注册</button></a>
-
-
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
-            </form>
-        </div>
-    </div>
-</nav>
-<!---------------------Top_End-------------------->
-
-<!---------------------middle_Begin-------------------->
-<div class="middle container-fluid">
-    <div style="height: 230px;"></div>
-    <div class="middle_menu row container ml-auto mr-auto">
-        <div class="col-3 d-flex justify-content-center align-items-center "><a href="community.html">高效研究所</a></div>
-        <div class="col-3 d-flex justify-content-center align-items-center "><a href="">文章</a></div>
-        <div class="col-3 d-flex justify-content-center align-items-center "><a href="">计划</a></div>
-        <div class="col-3 d-flex justify-content-center align-items-center "><a href="">市集</a></div>
-    </div>
-</div>
-<div style="height: 50px;"></div>
-<!---------------------block_Begin-------------------->
-<div class="container-fluid block">
-
-    <!---------------------left-------------------->
-    <div class="block1 float-left">
-        <!--  分栏一-->
-        <div style="height: 340px; background-color:#fff;" class="border border-light">
-            <div class="row">
-                <img src="images/Love.png" alt="" class="rounded-circle mt-3  ml-3 col-lg-1 d-none d-lg-block"
-                     style="width: 35px;height: 35px;">
-                <p class="col-lg-2 text-secondary d-block font-weight-bolder"
-                   style="margin-left: 1%;margin-top: 20px;font-size: 18px">匿名..</p>
-                <p class="col mr-3 mt-3 text-secondary d-none d-lg-block" style="margin-left: 420px;">255人正在讨论...</p>
-
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model01">新鲜水果</h3>
+			<div class="subtitle fl">
+            <span>|</span>
+				<a href="#">草莓</a>
+				<a href="#">苹果</a>	
             </div>
-
-            <h4 class="Discuss mt-2 ml-4 d-none d-md-block"><a href="">Windows 又换新图标了，话说图标太丑会影响你的工作效率吗？</a></h4>
-            <h5 class="Discuss mt-2 ml-4 d-md-none"><a href="">Windows 又换新图标了，话说图标太丑<br/>会影响你的工作效率吗？</a></h5>
-            <p class="ml-4 text-info" style="font-size: 10px">Windows
-                又换新图标了，有的小伙伴看到的第一眼以为电脑中毒了，反应过来才发现这是新图标，丑得说不出话来。有的小伙伴甚至有点拒绝打开这些应用，或者干脆给他们换一套新图标，让电脑更加赏心悦目。</p>
-
-            <div class="describe ml-5" style="background-color: #e6f4f5;"><p class="mt-2 text-secondary p-2">
-                本来觉得学系统美化没必要，直到微软更新图标。。</p></div>
-            <div class="describe " style="background-color: #f6e5dd;"><p class="mt-2 text-secondary p-2">嘿嘿</p></div>
-            <div class="describe" style="background-color: #e6f4f5;"><p class="mt-2 text-secondary p-2">
-                本来觉得学系统美化没必要，直到微软更新图标。。</p></div>
-            <div class="describe " style="background-color: #f6e5dd;"><p class="mt-2 text-secondary p-2">嘿嘿</p></div>
-            <div class="tellme"><p class="p-2 text-secondary d-flex justify-content-center align-items-center mt-5">
-                我有话说</p></div>
-        </div>
-        <!-- 分栏二-->
-        <div style="height: 550px; background-color:#fff;" class="border border-light mt-2">
-            <div class="row">
-                <p class="col text-dark d-block font-weight-bolder"
-                   style="margin-left: 3%;margin-top: 20px;font-size: 18px">今天看什么</p>
-                <p class="col mr-3 mt-4 text-secondary float-right"
-                   style="margin-left: 530px;font-size: 14px;">
-                    <a href="#">查看更多</a></p>
-
-            </div>
-            <hr/>
-            <div class="container">
-            <div class="row  no-gutters">
-                <div class="ml-3 col">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="  ml-3  col">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="  ml-3  col">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="  ml-3  col">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-
-
-            </div>
-                <div class="row no-gutters mt-5 ">
-                <div class="  ml-3 col d-none d-lg-block">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                    <div class="ml-3 col d-none d-lg-block">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-
-                </div>
-
-
-
-        </div>
-    </div>
-<!--        分栏二结束-->
-
-
-<!-- 分栏三-->
-        <div style="height: 550px; background-color:#fff;" class="border border-light mt-2">
-            <div class="row">
-                <p class="col text-dark d-block font-weight-bolder"
-                   style="margin-left: 3%;margin-top: 20px;font-size: 18px">技能</p>
-                <p class="col mr-3 mt-4 text-secondary  float-right"
-                   style="margin-left: 530px; font-size: 14px;">
-                    <a href="#">查看更多</a></p>
-
-            </div>
-            <hr/>
-            <div class="container">
-            <div class="row  no-gutters">
-                <div class=" ml-3 col">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="  ml-3 col">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="  ml-3 col">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="  ml-3 col">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-
-
-            </div>
-                <div class="row no-gutters mt-5">
-                <div class="  ml-3 col d-none d-lg-block">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                    <div class="card cardcss" style="width: 10rem;"><a href="#">
-                        <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example </p>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-
-                </div>
-
-
-
-        </div>
-    </div>
-<!--        分栏三结束-->
-
-
-
-        <!-- 分栏四-->
-        <div style="height: 550px; background-color:#fff;" class="border border-light mt-2">
-            <div class="row">
-                <p class="col text-dark d-block font-weight-bolder"
-                   style="margin-left: 3%;margin-top: 20px;font-size: 18px">技能</p>
-                <p class="col mr-3 mt-4 text-secondary  float-right"
-                   style="margin-left: 530px; font-size: 14px;">
-                    <a href="#">查看更多</a></p>
-
-            </div>
-            <hr/>
-            <div class="container">
-                <div class="row  no-gutters">
-                    <div class=" ml-3 col">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div class="row no-gutters mt-5">
-                    <div class="  ml-3 col d-none d-lg-block">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-            </div>
-        </div>
-        <!--        分栏四结束-->
-
-
-
-        <!-- 分栏四-->
-        <div style="height: 550px; background-color:#fff;" class="border border-light mt-2">
-            <div class="row">
-                <p class="col text-dark d-block font-weight-bolder"
-                   style="margin-left: 3%;margin-top: 20px;font-size: 18px">技能</p>
-                <p class="col mr-3 mt-4 text-secondary  float-right"
-                   style="margin-left: 530px; font-size: 14px;">
-                    <a href="#">查看更多</a></p>
-
-            </div>
-            <hr/>
-            <div class="container">
-                <div class="row  no-gutters">
-                    <div class=" ml-3 col">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div class="row no-gutters mt-5">
-                    <div class="  ml-3 col d-none d-lg-block">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="  ml-3 col d-none d-lg-block">
-                        <div class="card cardcss" style="width: 10rem;"><a href="#">
-                            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example </p>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-            </div>
-        </div>
-        <!--        分栏四结束-->
-
-
-
-
-
-        </div>
-
-<!--    右边框-->
-    <div class="block2 d-none d-lg-block">
-
-        <div class="card mb-4" style="width: 14rem;"><a href="">
-            <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-            <div class="card-body">
-                <p class="card-text">123</p></a>
-            </div>
-        </div>
-
-
-
-    <div class="card mb-4" style="width: 14rem;"><a href="">
-        <img class="card-img-top" style="height: 400px;" src="images/pic1771.jpg" alt="Card image cap">
-        <div class="card-body">
-            <p class="card-text">123</p></a>
-    </div>
-</div>
-
-<div class="card mb-4" style="width: 14rem;"><a href="">
-    <img class="card-img-top" src="images/pic1771.jpg" alt="Card image cap">
-    <div class="card-body">
-        <p class="card-text">123</p></a>
-</div>
-</div>
-
-    </div>
-
-</div>
-<!---------------------block_end-------------------->
-
-<!---------------------middle_End-------------------->
-
-<div style="width: 100%;height: 1500px;"></div>
-<!---------------------Bottom_Begin-------------------->
-<div class="container-fluid">
-    <div class="row" style="height: 230px; background-color:#23272b;">
-        <div class="col-lg-6 ml-5">
-            <div class="logo mt-5 ml-5"></div>
-            <p class="text-secondary ml-5 mt-3">由高教社联手网易推出，让每一个有提升愿望的用户能够学到中国知名高校的课程，并获得认证。</p>
-        </div>
-        <div class="col   d-none d-lg-block d-xl-block">
-            <div>
-                <p class="text-left text-secondary mt-5">关于我们</p>
-            </div>
-            <div class="footer_text" style="width: 110px;">
-                <a href="#" class="float-left text-secondary">薛晓云</a>
-
-                <a href="#" class="float-right text-secondary">薛晓云</a>
-
-            </div>
-            <div class="footer_text" style="width: 110px;">
-                <a href="#" class="float-left text-secondary">薛晓云</a>
-                <a href="#" class="float-right text-secondary">薛晓云</a>
-
-            </div>
-            <div class="footer_text" style="width: 110px;">
-                <a href="#" class="float-left text-secondary">薛晓云</a>
-                <a href="#" class="float-right text-secondary">薛晓云</a>
-
-            </div>
-        </div>
-        <div class="col text-secondary mt-5 ml-n5 d-none d-lg-block d-xl-block footer-logo">
-            <p class="ml-5 ">关注我们</p>
-            <div id="weichat_logo">
-        <span class="iconfont icon-weixin" style="margin-left: 18px;font-size: 55px;"><a href="javascript:;"></a>
-        <img src="images/1584096441.png" class=" mb-n2" alt="">
-        </span>
-
-                <span class="iconfont icon-weibo" style="font-size: 50px;"><a href="javascript:;"></a></span>
-            </div>
-
-        </div>
-        <div class="col d-none d-xl-block">
-            <p class="text-secondary mt-5 ">友情链接</p>
-            <dd><a href="javascript:;" class="link">123423423423</a></dd>
-            <dd><a href="javascript:;" class="link">123423423423</a></dd>
-            <dd><a href="javascript:;" class="link">123423423423</a></dd>
-            <dd><a href="javascript:;" class="link">123423423423</a></dd>
-
-
-        </div>
-
-
-    </div>
-</div>
-<div class="container-fluid text-secondary text-center footer-2 d-none d-lg-block d-xl-block"
-     style="background-color:#23272b;">
-    <p>粤B2-20090191-26 | 京ICP备12020869号-2 | 京公网安备44010602000207</p>
-    <p>©2014-2020 icourse163.org</p>
-</div>
-<!---------------------Bottom_End-------------------->
-<script src="js/jquery.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+			<a href="#" class="goods_more fr" id="fruit_more">查看更多></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="images/banner01.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">草莓</a></h4>
+					<a href="#"><img src="images/goods/goods003.jpg"></a>
+					<div class="prize">¥ 30.00</div>
+				</li>
+				<li>
+					<h4><a href="#">葡萄</a></h4>
+					<a href="#"><img src="images/goods/goods002.jpg"></a>
+					<div class="prize">¥ 5.50</div>
+				</li>
+				<li>
+					<h4><a href="#">柠檬</a></h4>
+					<a href="#"><img src="images/goods/goods001.jpg"></a>
+					<div class="prize">¥ 3.90</div>
+				</li>
+				<li>
+					<h4><a href="#">奇异果</a></h4>
+					<a href="#"><img src="images/goods/goods012.jpg"></a>
+					<div class="prize">¥ 25.80</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model02">海鲜水产</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+				<a href="#">河虾</a>
+				<a href="#">扇贝</a>				
+			</div>
+			<a href="#" class="goods_more fr">查看更多></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="images/banner02.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">青岛野生海捕大青虾</a></h4>
+					<a href="#"><img src="images/goods/goods018.jpg"></a>
+					<div class="prize">¥ 48.00</div>
+				</li>
+				<li>
+					<h4><a href="#">扇贝</a></h4>
+					<a href="#"><img src="images/goods/goods019.jpg"></a>
+					<div class="prize">¥ 46.00</div>
+				</li>
+				<li>
+					<h4><a href="#">冷冻秋刀鱼</a></h4>
+					<a href="#"><img src="images/goods/goods020.jpg"></a>
+					<div class="prize">¥ 19.00</div>
+				</li>
+				<li>
+					<h4><a href="#">基围虾</a></h4>
+					<a href="#"><img src="images/goods/goods021.jpg"></a>
+					<div class="prize">¥ 25.00</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model03">猪牛羊肉</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+				<a href="#">鲜芒</a>
+				<a href="#">加州提子</a>
+				<a href="#">亚马逊牛油果</a>
+			</div>
+			<a href="#" class="goods_more fr">查看更多></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="images/banner03.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">非洲山猪肉</a></h4>
+					<a href="#"><img src="images/goods/goods022.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">意大利牛扒</a></h4>
+					<a href="#"><img src="images/goods/goods023.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">俄罗斯羊腿</a></h4>
+					<a href="#"><img src="images/goods/goods024.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">中国钓鱼岛咸鱼</a></h4>
+					<a href="#"><img src="images/goods/goods025.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model04">禽类蛋品</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+				<a href="#">鲜芒</a>
+				<a href="#">加州提子</a>
+				<a href="#">亚马逊牛油果</a>
+			</div>
+			<a href="#" class="goods_more fr">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="images/banner04.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">印度走地鸡</a></h4>
+					<a href="#"><img src="images/goods/goods026.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">日本鸡蛋</a></h4>
+					<a href="#"><img src="images/goods/goods027.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">俄罗斯鸵鸟蛋</a></h4>
+					<a href="#"><img src="images/goods/goods028.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">美国鹌鹑蛋</a></h4>
+					<a href="#"><img src="images/goods/goods029.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model05">新鲜蔬菜</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+				<a href="#">鲜芒</a>
+				<a href="#">加州提子</a>
+				<a href="#">亚马逊牛油果</a>
+			</div>
+			<a href="#" class="goods_more fr">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="images/banner05.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">多伦多苹果</a></h4>
+					<a href="#"><img src="images/goods/goods030.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">西班牙香蕉</a></h4>
+					<a href="#"><img src="images/goods/goods031.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">非洲大白菜</a></h4>
+					<a href="#"><img src="images/goods/goods032.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">顺德车厘子</a></h4>
+					<a href="#"><img src="images/goods/goods033.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model06">速冻食品</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+				<a href="#">三全水饺</a>
+				<a href="#">印度恒河冰淇淋</a>
+				<a href="#">亚马逊叉烧包</a>
+			</div>
+			<a href="#" class="goods_more fr">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="images/banner06.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">印度恒河冰淇淋</a></h4>
+					<a href="#"><img src="images/goods/goods034.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">维多利亚棒棒冰</a></h4>
+					<a href="#"><img src="images/goods/goods035.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">印度恒河山泉水</a></h4>
+					<a href="#"><img src="images/goods/goods036.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+				<li>
+					<h4><a href="#">顺德山泉</a></h4>
+					<a href="#"><img src="images/goods/goods037.jpg"></a>
+					<div class="prize">¥ 38.00</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="foot_link">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">招聘人才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>		
+		</div>
+		<p>© 2020 顺德职业技术学院</p>
+		<p>电话：020-*******    越ICP备*******110号</p>
+	</div>
+    <!---------------------Bottom_End-------------------->
+	<script type="text/javascript" src="js/slideshow.js"></script>
+	<script type="text/javascript">
+		BCSlideshow('focuspic');
+		var oFruit = document.getElementById('fruit_more');
+		var oShownum = document.getElementById('show_count');
+
+		var hasorder = localStorage.getItem('order_finish');
+
+		if(hasorder)
+		{
+			oShownum.innerHTML = '2';
+		}
+
+		oFruit.onclick = function(){
+			window.location.href = 'list.html';
+		}
+	</script>
 </body>
 </html>
