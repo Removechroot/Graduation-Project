@@ -42,11 +42,11 @@ html,body{height:100%}
 .search_bar{width:1200px;height:115px;margin:0 auto;}
 .logo{width:150px;height:59px;margin:29px 0 0 17px;}
 
-.search_con{width:616px;height:38px;border:1px solid #37ab40;margin:34px 0 0 124px;background:url(../images/icons.png) 10px -338px no-repeat;}
+.search_con{width:616px;height:38px;border:1px solid #a3cf62;margin:34px 0 0 124px;background:url(../images/icons.png) 10px -338px no-repeat;}
 .search_con .input_text{width:470px;height:34px;border:0px;margin:2px 0 0 36px;outline:none;font-size:12px;color:#737272;font-family:'Microsoft Yahei'}
 
 .search_con .input_btn{
-	width:100px;height:38px;background-color:#37ab40;border:0px;font-size:14px;color:#fff;font-family:'Microsoft Yahei';outline:none;cursor:pointer;
+	width:100px;height:38px;background-color:#a3cf62;border:0px;font-size:14px;color:#fff;font-family:'Microsoft Yahei';outline:none;cursor:pointer;
 }
 
 .guest_cart{
@@ -59,7 +59,7 @@ html,body{height:100%}
 
 .guest_cart .goods_count{
 	width:40px;height:40px;text-align:center;line-height:40px;font-size:18px;
-	font-weight:bold;color:#fff;background-color:#ff8800;
+	font-weight:bold;color:#fff;background-color:#a3cf62;
 }
 
 
@@ -67,9 +67,9 @@ html,body{height:100%}
 
 .navbar_con{height:40px;border-bottom:2px solid brown}
 .navbar{width:1200px;margin:0 auto;}
-.navbar h1{width:200px;height:40px;line-height:40px;text-align: center;font-size:14px;color:#fff;background-color:brown;}
+.navbar h1{width:200px;height:40px;line-height:40px;text-align: center;font-size:14px;color:#fff;background-color: brown;}
 
-.navbar .subnav_con{width:200px;height:40px;background-color:#39a93e;position:relative;cursor:pointer;}
+.navbar .subnav_con{width:200px;height:40px;background-color:brown;position:relative;cursor:pointer;}
 
 .navbar .subnav_con h1{position:absolute;left:0;top:0;text-align:left;text-indent:40px}
 .navbar .subnav_con span{display:block;width:16px;height:9px;background:url(../images/down.png) no-repeat;position:absolute;right:27px;top:16px;transition:all 300ms ease-in;
@@ -118,7 +118,7 @@ html,body{height:100%}
 
 /* 商品列表样式 */
 
-.list_model{width:1200px;height:340px;margin:15px auto 0;}
+.list_model{width:1100px;margin:15px auto 0;}
 .list_title{height:40px;border-bottom:2px solid #42ad46}
 .list_title h3{height:40px;line-height:40px;font-size:16px;color:#37ab40;font-weight:bold;}
 .list_title .subtitle{height:20px;line-height:20px;margin-top:15px;}
@@ -127,9 +127,35 @@ html,body{height:100%}
 .list_title .subtitle a:hover,.goods_more:hover{color:#ff8800}
 .goods_more{height:20px;margin-top:15px;color:#666}
 
-.goods_con{height:300px;}
-.goods_banner{width:200px;height:300px;}
-.goods_banner img{width:200px;height:300px;}
+.center_hot{width:1200px;height:350px;margin: auto; margin-top:30px;}
+.center_hot h1{text-align:center;font-size:24px;}
+.cent_h{width:1200px;height:350px; margin:auto;padding-left:60px;}
+.center_hot h4{width:160px;text-align:center;margin-left:45px;}
+.center_hot h4 a{font-weight:normal;color:#666;display:block;width:160px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.cov{width:250px;position:relative;float:left;margin-top:30px;margin-left:15px;border:1px solid #dddddd}
+
+.cov img{width:250px;height:200px;}
+.operate{text-align:center;}
+.center_hot .operate .prize{color:#da260e; font-size:14px;}
+.center_hot .operate .unit{color:#999;padding-left:5px;}
+.center_hot .operate .add_goods{display:inline-block;width:15px;height:15px;background:url(../images/shop_cart.png);position:absolute;top:3px;left:150px;}
+
+
+.goods_con{height:400px;}
+.goods_banner{width:1100px;height:60px;}
+.goods_banner img{width:1100px;height:60px;}
+.goods_list{width:1100px;height:299px;border-left:1px solid #ededed;margin-left: 45px;}
+.goods_list li{height:299px;width:249px;border-right:1px solid #ededed;float:left}
+.goods_list li:hover{width:248px;height:297px;border:1px solid gold;}
+.goods_list li:hover img{opacity:0.8}
+
+.goods_list li h4{width:200px;height:50px;margin:20px auto 0;text-align:center;}
+.goods_list li h4 a{font-size:14px;color:#666;font-weight:normal;line-height:24px;}
+.goods_list li h4 a:hover{color:#ff8800}
+
+.goods_list li img{display:block;width:180px;height:180px;margin:0 auto;}
+.goods_list li .prize{text-align:center;font-size:20px;color:#c40000;margin-top:5px;}
+
 
 .goods_list{width:1000px;height:299px;border-bottom:1px solid #ededed}
 .goods_list li{height:299px;width:249px;border-right:1px solid #ededed;float:left}
@@ -195,7 +221,7 @@ html,body{height:100%}
 
 .sort_bar{height:30px;background-color:#f0fdec}
 .sort_bar a{display:block;height:30px;line-height:30px;padding:0 20px;float:left;color:#000}
-.sort_bar .active{background-color:#37ab40;color:#fff;}
+.sort_bar .active{background-color:#a3cf62;color:#fff;}
 
 
 .goods_type_list{
@@ -205,14 +231,15 @@ html,body{height:100%}
 .goods_type_list li{
 	width:196px;
 	float:left;
-	margin-bottom:10px
+	margin-bottom:10px;
+	text-align:center;
 }
 
 .goods_type_list li img{width:160px;height:160px;display:block;margin:10px auto;}
 .goods_type_list li h4{width:160px;margin:0 auto;}
 .goods_type_list li h4 a{font-weight:normal;color:#666;display:block;width:160px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .operate{width:160px;margin:10px auto;position:relative;}
-.goods_type_list .operate .prize{color:#da260e; font-size:14px;} 
+.goods_type_list .operate .prize{color:#da260e; font-size:14px;}
 .goods_type_list .operate .unit{color:#999;padding-left:5px;}
 .goods_type_list .operate .add_goods{display:inline-block;width:15px;height:15px;background:url(../images/shop_cart.png);position:absolute;right:0;top:3px;}
 
@@ -277,11 +304,10 @@ html,body{height:100%}
 
 .login_top{width:960px;height:130px;margin:0 auto;}
 .login_logo{display:block;width:193px;height:76px;margin-top:30px;}
-.login_form_bg{height:480px;background-color:#518e17}
+.login_form_bg{height:480px;background-color:#a3cf62;}
 .no-mp{margin-top:0px;}
 .login_form_wrap{width:960px;height:480px;margin:0 auto;}
-.login_banner{width:381px;height:322px;background:url(../images/login_banner.png) no-repeat;margin-top:90px;}
-.slogan{width:40px;height:300px;font-size:30px;color:#f0f9e8;text-align:center;line-height:36px;margin:80px 0 0 120px}
+.login_banner{width:500px;height:400px;background:url(../images/01.png) no-repeat;background-size: cover; margin-top:50px;}
 .login_form{width:368px;height:378px;border:1px solid #c6c6c5;background-color:#fff; margin-top:50px;}
 
 .login_title{height:60px;width:308px;margin:10px auto;border-bottom:1px solid #e0e0e0;}
@@ -399,7 +425,7 @@ html,body{height:100%}
 .common_list_con dt{font-size:14px;font-weight:bold;margin-bottom:10px}
 .common_list_con dd input{vertical-align:bottom;margin-right:10px}
 
-.edit_site{position:absolute; right:20px;top:30px;width:100px;height:30px;background-color:#37ab40;text-align:center;line-height:30px;color:#fff}
+.edit_site{position:absolute; right:20px;top:30px;width:100px;height:30px;background-color:#fcaf17;text-align:center;line-height:30px;color:#fff}
 
 .pay_style_con{margin:20px;}
 .pay_style_con input{float:left;margin:14px 7px 0 0;}
@@ -459,7 +485,7 @@ html,body{height:100%}
 }
 
 .order_list_table td{
-	border:1px solid #ddd;	
+	border:1px solid #ddd;
 	text-align:center;
 }
 
@@ -526,6 +552,7 @@ html,body{height:100%}
 	width:980px;
 	float:right;
 	min-height:500px;
+
 }
 
 .w980{
@@ -537,28 +564,69 @@ html,body{height:100%}
 }
 
 
-.common_title2{height:20px;line-height:20px;font-size:16px;margin:10px 0;}
-.user_info_list{
-	background-color:#f9f9f9;
-	margin:10px 0 15px;
+.user_info{
+	margin:25px 0 15px;
 	padding:10px 0;
-	height:90px;
+	height:50px;
+	border-bottom:1px solid #ddd;
 }
 
-.user_info_list li{
+.user_info li{
+	float:left;
 	line-height:30px;
 	text-indent:30px;
 	font-size:14px;
+
+}
+
+.user_info li span{
+	width:100px;
+	float:left;
+	text-align:left;
+}
+.user_info img{
+	width:60px;
+	height:60px;
+	border-radius:100%;
+	position:relative;
+	bottom: 20px;
+}
+.user_info #id{
+	font-size:16px;
+	position:relative;
+	color:#000;
+	bottom:20px;
+	right:30px;
+
+}
+.user_info li #id1{
+	margin-left:30px;
+}
+.user_info_list{
+	margin:25px 0 10px;
+	padding:10px 0;
+	height:50px;
+}
+
+.user_info_list li{
+	float:left;
+	line-height:5px;
+	text-indent:30px;
+	margin-left:30px;
+	font-size:14px;
+
 }
 
 .user_info_list li span{
 	width:100px;
 	float:left;
-	text-align:right;
+	text-align:left;
 }
-
 .info_con{
 	width:980px;
+	height:170px;
+	border:1px solid #ddd;
+	margin-bottom: 40px;
 }
 
 .info_l{
